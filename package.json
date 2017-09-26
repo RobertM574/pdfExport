@@ -4,5 +4,22 @@
   "main": "index.js",
   "repository": "https://github.com/RobertM574/pdfExport.git",
   "author": "maojunfeng02 <maojunfeng02@meituan.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "ddd": "rm -rf build/*;webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "global": "^4.3.2",
+    "jspdf": "^1.3.5",
+    "transformcanvas": "^0.0.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.6.0",
+    "webpack-uglify-parallel": "^0.1.4"
+  }
 }
